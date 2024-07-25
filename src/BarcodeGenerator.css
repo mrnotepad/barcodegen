@@ -1,0 +1,81 @@
+/* src/BarcodeGenerator.css */
+.barcode-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+.pagetitle-text {
+    text-align: center;
+}
+  .barcode-item {
+    margin: 0;
+    display: block;
+  }
+  .barcode-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .barcode-header {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    max-width: 100%;
+  }
+  .barcode-text {
+    margin-left: 5px;
+    font-size: 16px;
+    max-width: calc(100% - 40px);
+    text-align: center;
+    line-height: 1.2;
+  }
+  .barcode-logo {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+  }
+  .footer-text {
+    font-size: 14px;
+    margin-top: 20px;
+  }
+  @media print {
+    body {
+      width: 58mm;
+      margin: 0;
+      padding: 0;
+    }
+    .barcode-container {
+      width: 100%;
+      text-align: left;
+    }
+    .barcode-item {
+      margin: 0;
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .barcode-wrapper {
+      margin: 5mm 0;
+    }
+    .barcode-header {
+      margin: 0;
+    }
+    .barcode-text {
+      margin-left: 2mm;
+      font-size: 14px;
+    }
+    .footer-text {
+      display: none;
+    }
+    .pagetitle-text {
+        display: none;
+      }
+    .print-hidden {
+        display: none !important;
+      }
+    button, input {
+      display: none;
+    }
+  }
+  
